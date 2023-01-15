@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #562EFF;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    height: 94px;
+    background: #562EFF;
+    display: flex;
+}
