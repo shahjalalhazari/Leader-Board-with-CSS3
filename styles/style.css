@@ -84,7 +84,7 @@ hr {
 
 /* Latest Course Section's Style */
 .course-items {
-    margin-top: 24px;
+    margin: 24px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
@@ -184,6 +184,48 @@ hr {
     .course-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+    .rating {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .rating img {
+        width: 14px;
+        height: auto;
+    }
+}
+
+
+/* Responsive for Medium devices */
+@media screen and (min-width:577px) and (max-width:992px) {
+    /* Main Section's Style */
+    .section {
+        margin: 50px 40px;
+        padding: 35px;
+    }
+    .all-players {
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Top Blog */
+    .all-blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .blog-list {
+        margin-right: 0;
+        flex-direction: column;
+    }
+
+    /* Latest Course Section's Style */
+    .course-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
     .rating {
