@@ -22,14 +22,15 @@ a {
     text-decoration: none;
     color: var(--primary-color);
 }
-
-/* Main Section's Style */
-.main-section {
+.section {
     margin: 40px 285px;
     background-color: #fff;
     border-radius: 5px;
     padding: 33px;
 }
+
+/* Main Section's Style */
+/* Top Players */
 .all-players {
     margin: 40px 0;
     display: grid;
@@ -50,7 +51,7 @@ hr {
     background-color: var(--primary-color);
 }
 
-/* Top Blog */
+/* Top Blogs */
 .top-blog {
     margin-top: 30px;
 }
@@ -81,12 +82,80 @@ hr {
     color: #9F9F9F;
 }
 
+/* Latest Course Section's Style */
+.course-items {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.course-item {
+    border-radius: 12px;
+    padding: 14px 15px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.10);
+}
+.course-item img {
+    width: 100%;
+    height: auto;
+}
+.course-title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20.0336px;
+    color: #1E1E1E;
+    margin-top: 16px;
+}
+.course-author{
+    font-family: 'Roboto';
+    font-size: 14.6913px;
+    color: #ED6B4F;
+    margin-top: 10px;
+}
+.rating-duration {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.rating {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+.rating img {
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: auto;
+}
+.rating h6 {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #8c8c8c;
+}
+.duration {
+    background-color: #FFE4E8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 20px;
+
+}
+.duration img {
+    width: 20px;
+    height: auto;
+}
+.time {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    color: #FF4A60;
+}
 
 /* Responsive for small devices */
 @media screen and (max-width:576px) {
-
     /* Main Section's Style */
-    .main-section {
+    .section {
         margin: 30px 25px;
         padding: 25px;
     }
@@ -109,5 +178,21 @@ hr {
     .blog-list {
         margin-right: 0;
         flex-direction: column;
+    }
+
+    /* Latest Course Section's Style */
+    .course-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+    .rating {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .rating img {
+        width: 14px;
+        height: auto;
     }
 }
